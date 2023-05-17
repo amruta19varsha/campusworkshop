@@ -91,6 +91,10 @@ $(document).ready(function () {
 
         if (state.text() === "Todo") {
             new_state = "In Progress"
+        }else if (state.text() === "Complete") {
+            new_state: "Todo";
+        } else if (state.text() === "Todo") {
+            new_state: "In Progress";
         }
        
         console.log(new_state)
